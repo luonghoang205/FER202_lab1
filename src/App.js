@@ -1,20 +1,24 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ProductCard from "./components/ProductCard";
+import ProductList from "./components/ProductList";
 
 function App() {
-  const userShop = [
-  
-  ];
-
- return (
-    <div className="App">
-      <lab1 />
-      
-    </div>
- );
+    return (
+        <div>
+            <Header />
+            <div className="mt-4">
+                <Banner />
+            </div>
+            <div className="mt-4">
+                <ProductCard />
+            </div>
+            <div className="mt-4">
+                <Footer />
+            </div>
+        </div>
+    )
 }
 
 export default App;
